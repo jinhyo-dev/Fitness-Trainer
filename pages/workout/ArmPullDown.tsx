@@ -4,7 +4,7 @@ export default function ArmPullDown() {
   return (
     <div>
       <div className="ArmPullDown">
-        This is ArmPullDown
+        ArmPullDown
       </div>
     </div>
     
