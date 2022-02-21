@@ -14,13 +14,13 @@ export default function Home() {
       <div className="box">
         <p>종목</p>
         <select id='select'>
-          <option value="BenchPress">Bench Press</option>
-          <option value="Deadlift">Deadlift</option>
-          <option value="Squat">Squat</option>
-          <option value="BarbellCurl">Barbell Curl</option>
-          <option value="BarbellRow">Barbell Row</option>
           <option value="ArmPullDown">Arm Pull-down</option>
+          <option value="BarbellCurl">Barbell Curl</option>
+          <option value="BenchPress">Bench Press</option>
+          <option value="BarbellRow">Barbell Row</option>
+          <option value="Deadlift">Deadlift</option>
           <option value="LegPress">Leg Press</option>
+          <option value="Squat">Squat</option>
         </select>
         <br />
         <button onClick={changePage}>CONFIRM</button>
