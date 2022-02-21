@@ -6,8 +6,8 @@ export default function Home() {
   const router = useRouter();
   
   const changePage = () => {
-    const value = $("#select option:selected").val()
-    router.push("/workout/" + value)
+    const page = $("#select option:selected").val()
+    router.push("/workout/" + page)
   }
   return (
     <div className="container">
