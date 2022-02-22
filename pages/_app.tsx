@@ -1,4 +1,5 @@
 import { AppProps } from "next/app";
+
 import '../styles/globals.css';
 import '../styles/ArmPullDown.css';
 import '../styles/Squat.css';
