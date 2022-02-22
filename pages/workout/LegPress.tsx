@@ -4,7 +4,7 @@ export default function legPress() {
   return (
     <div>
       <div className="LegPress">
-        <img src="/images/LegPress.png" alt="LegPress" className="LP" />
+        <img src="/images/LegPress.png" alt="LegPress" />
       </div>
     </div>
   )
