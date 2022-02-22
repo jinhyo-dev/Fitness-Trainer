@@ -7,6 +7,7 @@ import '../styles/BenchPress.css';
 import '../styles/Deadlift.css';
 import '../styles/LegPress.css';
 import '../styles/Squat.css';
+import '../styles/index.css'
 
 function App({Component, pageProps}:AppProps) {
   return <Component {...pageProps} />

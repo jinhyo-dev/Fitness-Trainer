@@ -10,9 +10,9 @@ export default function Home() {
     router.push("/workout/" + page)
   }
   return (
-    <div className="container">
+    <div className="index">
       <div className="box">
-        <p>종목</p>
+        <div className="title">Fitness Trainer</div>
         <select id='select'>
           <option value="ArmPullDown">Arm Pull-down</option>
           <option value="BarbellCurl">Barbell Curl</option>

@@ -4,20 +4,3 @@ body {
 .box {
   text-align: center;
 }
-
-p {
-  color: #fff;
-  margin-top: 10rem;
-}
-
-select {
-  color: #f00;
-}
-
-option {
-  color: #f00;
-}
-
-div {
-  color: #fff;
-}

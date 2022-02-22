@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.index select {
+  margin-top: 3rem;
+  width: 14rem;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  border-radius: 3rem;
+  text-align: center;
+  color: #f00;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.index option {
+  color: #f00;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.index .title {
+  color: #fff;
+  margin-top: 4rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 13vw;
+}
+
+.index button {
+  margin-top: 20rem;
+  background-color: #fbeee0;
+  border: 1px solid #000;
+  border-radius: 30px;
+  box-shadow: #ece6cc 4px 4px 0 0;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 8rem;
+}
+
+.index button:hover {
+  background-color: #ffd400;
+}
+
+.index button:active {
+  box-shadow: #ffd400 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .index button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
