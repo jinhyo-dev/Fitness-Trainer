@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function legPress() {
   return (
-    <div>LegPress</div>
+    <div>
+      <div className="LegPress">
+        <img src="/images/LegPress.png" alt="LegPress" className="LP" />
+      </div>
+    </div>
   )
 }

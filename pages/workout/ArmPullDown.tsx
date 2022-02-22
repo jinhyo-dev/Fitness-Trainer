@@ -3,7 +3,7 @@ export default function ArmPullDown() {
   return (
     <div>
       <div className="ArmPullDown">
-        <img src='/images/ArmPullDown.png' alt="ArmPullDown" />
+        <img src='/images/ArmPullDown.png' alt="ArmPullDown" className="APD" />
       </div>
     </div>
     

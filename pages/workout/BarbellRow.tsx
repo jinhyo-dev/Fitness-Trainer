@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function BarbellRow() {
   return (
-    <div>BarbellRow</div>
+    <div>
+      <div className="BarbellRow">
+        <img src='/images/BarbellRow.png' alt="BarbellRow" className="BBR" />
+      </div>
+    </div>
   )
 }
