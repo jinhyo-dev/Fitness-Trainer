@@ -3,6 +3,7 @@
 
 body {
   background-color: #000;
+  text-align: center;
 }
 .box {
   text-align: center;
@@ -19,8 +20,8 @@ img {
 h1 {
   font-family: 'Do Hyeon', sans-serif;
   text-align: center;
-  color: #fff;
-  font-size: 3.3rem;
+  color: #d1581b;
+  font-size: 12vw;
 }
 
 p {
@@ -38,5 +39,5 @@ p {
 .caution {
   font-family: 'Gowun Dodum', sans-serif;
   color: #fff;
-  font-size: 3.4vw;
+  font-size: 3.3vw;
 }

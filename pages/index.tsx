@@ -16,8 +16,8 @@ export default function Home() {
         <select id='select'>
           <option value="ArmPullDown">Arm Pull-down</option>
           <option value="BarbellCurl">Barbell Curl</option>
-          <option value="BenchPress">Bench Press</option>
           <option value="BarbellRow">Barbell Row</option>
+          <option value="BenchPress">Bench Press</option>
           <option value="Deadlift">Deadlift</option>
           <option value="LegPress">Leg Press</option>
           <option value="Squat">Squat</option>
