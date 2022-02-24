@@ -35,11 +35,9 @@ export default function Squat() {
         <p>100개 기준으로 10회씩 10세트<br/>또는 25회씩 4세트</p>
           
         <input type='number' placeholder="횟수선택" className="ChooseNum" min='1' max='25' onChange={changeNum} value={num}/>
-        <button onClick={() => {checkSubmit(), visibleStartBtn()}} style={{marginLeft: '6px'}}>확인</button> <br />
-    
-        <button style={{display: 'none'}} id='startBtn'>시작</button>
-        
-        <b style={{color: '#fff'}}>값 : {num}</b>
+        <button className="identifyBtn" onClick={() => {checkSubmit(), visibleStartBtn()}} style={{marginLeft: '6px'}}>확인</button> <br />
+        <b style={{color: '#fff'}}>세트 수 : {num}회</b> <br />
+        <button style={{display: 'none'}} id='startBtn'>시작</button> 
       
       </div>
     </div>
