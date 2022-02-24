@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 export default function Squat() {
+  
+  const Timer = () => {
+    const [min, setMin] = useState();
+    const [sec, setSec] = useState(0);
+  }
+  
   return (
     <div>
       <div className="Squat">
@@ -16,6 +22,15 @@ export default function Squat() {
           주의사항 : 자신의 다리 상태에 따라 운동 횟수를 조절하며, 앉을 때 무릎이 발가락보다 앞으로 나가지 않도록 한다.
         </div>
         <p>100개 기준으로 10회씩 10세트<br/>또는 25회씩 4세트</p>
+     
+        <form>
+        <input type='number' placeholder="횟수선택" className="ChooseNum" min='1' max='25' />
+        <input type='submit' className="btn" value="확인" onClick={Timer} />
+        </form>
+
+        <div className="Timer">
+          {min} : {sec}
+        </div>
       </div>
     </div>
   )
