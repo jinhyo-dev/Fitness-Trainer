@@ -42,8 +42,8 @@ export default function Squat() {
 
         <div id="timerBox" style={{display: 'none'}}>
           <div className="latestNum">남은 세트 수 : {num}회</div>  
-          <button>시작</button>
-          <button style={{marginLeft: '1.5rem'}}>종료</button>
+          <button className='start'>시작</button>
+          <button className='stop' style={{marginLeft: '1.5rem'}}>종료</button>
         </div>
       
       </div>
