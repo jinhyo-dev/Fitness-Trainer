@@ -1,24 +1,7 @@
 import React, { useState } from 'react'
+import Type from '../components/Type'
 
 export default function Squat() {
-  
-  const [num, setNum] = useState<number>()
-  const [submit, setSubmit] = useState<any>(false)
-  const checkSubmit = () => setSubmit(true);
-
-  const visibleStartBtn = () => {
-    if (submit === true) {
-      const box = document.getElementById('timerBox')
-      const checkNum = document.getElementById('checkNum')
-      checkNum.style.display = 'none'
-      box.style.display = ''
-    }
-  }
-
-  const changeNum = (e:any) => {
-    setNum(e.target.value)
-  }
-  
   return (
     <div>
       <div className="Squat">
@@ -33,19 +16,8 @@ export default function Squat() {
           호흡법 : 내려갈 때 숨을 마시고, 일어설 때 숨을 내쉰다. < br />
           주의사항 : 자신의 다리 상태에 따라 운동 횟수를 조절하며, 앉을 때 무릎이 발가락보다 앞으로 나가지 않도록 한다.
         </div>
-        <p>100개 기준으로 10회씩 10세트<br/>또는 25회씩 4세트</p>
-
-        <div id="checkNum">  
-          <input type='number' pattern='\d*' placeholder="횟수선택" className="ChooseNum" min='1' max='25' onChange={changeNum} value={num}/>
-          <button className="identifyBtn" onClick={() => {checkSubmit(), visibleStartBtn()}} style={{marginLeft: '6px'}}>확인</button> <br />
-        </div>
-
-        <div id="timerBox" style={{display: 'none'}}>
-          <div className="latestNum">남은 세트 수 : {num}회</div>  
-          <button className='start'>시작</button>
-          <button className='stop' style={{marginLeft: '1.5rem'}}>종료</button>
-        </div>
-      
+        <p>100개 기준으로 10회씩 10세트<br />또는 25회씩 4세트</p>
+        <Type />
       </div>
     </div>
   )
