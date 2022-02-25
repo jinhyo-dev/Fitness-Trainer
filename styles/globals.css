@@ -67,3 +67,26 @@ p {
   cursor: not-allowed;
   opacity: 1;
 }
+
+#timerBox {
+  border-radius: 1rem;
+  background-color: #fff;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #fff;
+  height: 17vh;
+  width: 70vw;
+  margin-bottom: 3rem;
+}
+
+#timerBox button {
+  margin-top: 7rem;
+}
+
+.latestNum {
+  color: #000;
+  margin-left: 5px;
+  text-align: left;
+  font-size: 2.5vw;
+}

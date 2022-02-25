@@ -5,12 +5,11 @@ export default function Squat() {
   const [num, setNum] = useState<number>()
   const [submit, setSubmit] = useState<any>(false)
   const checkSubmit = () => setSubmit(true);
-  console.log(num)
 
   const visibleStartBtn = () => {
     if (submit === true) {
-      const btn = document.getElementById('startBtn')
-      btn.style.display = ''
+      const box = document.getElementById('timerBox')
+      box.style.display = ''
     }
   }
 
@@ -36,8 +35,11 @@ export default function Squat() {
           
         <input type='number' placeholder="횟수선택" className="ChooseNum" min='1' max='25' onChange={changeNum} value={num}/>
         <button className="identifyBtn" onClick={() => {checkSubmit(), visibleStartBtn()}} style={{marginLeft: '6px'}}>확인</button> <br />
-        <b style={{color: '#fff'}}>세트 수 : {num}회</b> <br />
-        <button style={{display: 'none'}} id='startBtn'>시작</button> 
+        <div id="timerBox" style={{display: 'none'}}>
+          <div className="latestNum">남은 세트 수 : {num}회</div>  
+          <button>시작</button>
+          <button style={{marginLeft: '1.5rem'}}>종료</button>
+        </div>
       
       </div>
     </div>
