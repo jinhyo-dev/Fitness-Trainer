@@ -90,13 +90,13 @@ p {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #fff;
-  height: 17vh;
+  height: 20vh;
   width: 70vw;
   margin-bottom: 3rem;
 }
 
 #timerBox button {
-  margin-top: 0.5rem;
+  margin-top: 2vh;
 }
 
 .latestNum {
@@ -115,6 +115,7 @@ p {
 
 .mainBtn {
   margin-top: 10vh;
+  margin-top: 3vh;
   background-color: #fbeee0;
   border: 1px solid #000;
   border-radius: 30px;
@@ -150,6 +151,7 @@ p {
 }
 
 .latestNum {
+  font-size: 3vw;
   font-family: 'HealthsetGothicLight';
   font-size: 4vw;
   text-align: center;
@@ -184,5 +186,6 @@ p {
 
 .tag {
   font-size: 4vw;
+  font-size: 2.5vw;
   margin-top: 0.5rem;
 }
