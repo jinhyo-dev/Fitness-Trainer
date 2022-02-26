@@ -25,7 +25,7 @@ export default function Type() {
     setNum(e.target.value)
   }
 
-  const minusNum = (e: any) => {
+  const minusNum = () => {
     setNum(num - 1)
     if (num == 1) {
       const container = document.getElementById('container')
@@ -36,6 +36,21 @@ export default function Type() {
     }
   }
 
+  const startChangeBoxContainer = () => {
+    const stopBoxContainer = document.getElementById('stopBoxContainer')
+    const defaltBoxContainer = document.getElementById('defaultBoxContain')
+    const startBoxContainer = document.getElementById('startBoxContainer')
+    defaltBoxContainer.style.display = 'none'
+    startBoxContainer.style.display = ''
+    stopBoxContainer.style.display = 'none'
+  }
+
+  const stopChangeBoxContainer = () => {
+    const startBoxContainer = document.getElementById('startBoxContainer')
+    const stopBoxContainer = document.getElementById('stopBoxContainer')
+    startBoxContainer.style.display = 'none'
+    stopBoxContainer.style.display = ''
+  }
   return (
     <div>
       <div>
@@ -46,10 +61,24 @@ export default function Type() {
 
         <div id="timerBox" style={{ display: 'none' }}>
           <div className="latestNum">남은 세트 수 : {num}회</div>
-          <div className='start'>START !</div>
-          <div className='tag'>세트가 끝나시면 종료 버튼을 누르세요</div>
-          <button className='startBtn'>시작</button>
-          <button className='stopBtn' style={{ marginLeft: '1rem' }} onClick={minusNum}>종료</button>
+
+          <div id="defaultBoxContain">
+            <div className='start'>START !</div>
+            <div className='tag'>시작 버튼을 누르세요.</div>
+          </div>
+
+          <div id="startBoxContainer" style={{ display: 'none'}}>
+            <div style={{ fontSize: '8vw', marginTop: '1rem', color: '#03e3fc' }}>{num}세트 시작!</div>
+            <div style={{ marginTop: '0.5rem', fontSize: '3vw' }}>세트가 끝나면 종료 버튼을 누르세요.</div>
+          </div>
+
+          <div id="stopBoxContainer" style={{ display: 'none'}}>
+            <div style={{fontSize: '8vw', marginTop: '1rem', color: '#fc6203' }}>{num+1}세트 종료</div>
+            <div style={{ marginTop: '0.5rem', fontSize: '3vw' }}>적당량의 휴식을 취하고 시작 버튼을 누르세요.</div>
+          </div>
+
+          <button className='startBtn' onClick={startChangeBoxContainer}>시작</button>
+          <button className='stopBtn' style={{ marginLeft: '1rem' }} onClick={() => { minusNum(), stopChangeBoxContainer()}}>종료</button>
         </div>
       </div>
       {renderCondition}

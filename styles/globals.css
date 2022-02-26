@@ -114,7 +114,7 @@ p {
 }
 
 .mainBtn {
-  margin-top: 20rem;
+  margin-top: 10vh;
   background-color: #fbeee0;
   border: 1px solid #000;
   border-radius: 30px;
@@ -151,6 +151,7 @@ p {
 
 .latestNum {
   font-family: 'HealthsetGothicLight';
+  font-size: 4vw;
   text-align: center;
   position: relative;
   top: 9.5px;
@@ -178,9 +179,10 @@ p {
   color: #40e36b;
   margin-top: 1rem;
   font-family: 'Fredoka', sans-serif;
-  font-size: 3rem;
+  font-size: 10vw;
 }
 
 .tag {
+  font-size: 4vw;
   margin-top: 0.5rem;
 }
