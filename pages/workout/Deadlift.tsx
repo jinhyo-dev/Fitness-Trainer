@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Type from '../components/Type'
 export default function Deadlift() {
   return (
     <div>
-      <div className="Deadlift">
+      <div className="Deadlift" id='container'>
         <h1>Barbell Row</h1>
         <img src='/images/Deadlift.png' alt="Deadlift" />
         <div className="explain">
@@ -17,6 +17,7 @@ export default function Deadlift() {
         </div>
         <p>15회씩 3~5세트</p>
       </div>
+      <Type />
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Type from '../components/Type'
 export default function BarbellCurl() {
   return (
     <div>
-      <div className="BarbellCurl">
+      <div className="BarbellCurl" id='container'>
         <h1>Leg Press</h1>
         <img src="/images/BarbellCurl.png" alt="BarbellCurl" />
         <div className="explain">
@@ -18,6 +18,7 @@ export default function BarbellCurl() {
         </div>
         <p>12-15회씩 3-4세트</p>
       </div>
+      <Type />
     </div>
   )
 }

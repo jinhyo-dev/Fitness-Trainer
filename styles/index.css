@@ -47,11 +47,11 @@
 }
 
 .index button:hover {
-  background-color: #ffd400;
+  background-color: #dfca64;
 }
 
 .index button:active {
-  box-shadow: #ffd400 2px 2px 0 0;
+  box-shadow: #dfca64 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 

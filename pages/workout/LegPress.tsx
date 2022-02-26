@@ -1,8 +1,9 @@
 import React from 'react'
+import Type from '../components/Type'
 export default function LegPress() {
   return (
     <div>
-      <div className="LegPress">
+      <div className="LegPress" id='container'>
         <h1>Leg Press</h1>
         <img src='/images/LegPress.png' alt="LegPress" />
         <div className="explain">
@@ -17,6 +18,7 @@ export default function LegPress() {
         </div>
         <p>12~15회씩 3~5세트</p>
       </div>
+      <Type />
     </div>
   )
 }

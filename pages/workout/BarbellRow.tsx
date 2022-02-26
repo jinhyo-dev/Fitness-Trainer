@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Type from '../components/Type'
 export default function BarbellRow() {
   return (
     <div>
-      <div className="BarbellRow">
+      <div className="BarbellRow" id="container">
         <h1>Deadlift</h1>
         <img src="/images/BarbellRow.png" alt="BarbellRow" />
         <div className="explain">
@@ -17,6 +17,7 @@ export default function BarbellRow() {
         </div>
         <p>8-15회씩 3-4세트</p>
       </div>
+      <Type />
     </div>
   )
 }

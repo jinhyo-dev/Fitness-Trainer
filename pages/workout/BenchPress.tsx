@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Type from '../components/Type'
 export default function BenchPress() {
   return (
     <div>
-      <div className="BenchPress">
+      <div className="BenchPress" id='container'>
         <h1>Bench Press</h1>
         <img src="/images/BenchPress.png" alt="BenchPress" />
         <div className="explain">
@@ -17,6 +17,7 @@ export default function BenchPress() {
         </div>
         <p>10-15회씩 3-5세트</p>
       </div>
+      <Type />
     </div>
   )
 }

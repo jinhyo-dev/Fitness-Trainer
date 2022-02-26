@@ -4,7 +4,7 @@ import Type from '../components/Type'
 export default function Squat() {
   return (
     <div>
-      <div className="Squat">
+      <div className="Squat" id="container">
         <h1>Squat</h1>
         <img src="/images/Squat.png" alt="Squat" />
         <div className="explain">
@@ -17,8 +17,8 @@ export default function Squat() {
           주의사항 : 자신의 다리 상태에 따라 운동 횟수를 조절하며, 앉을 때 무릎이 발가락보다 앞으로 나가지 않도록 한다.
         </div>
         <p>100개 기준으로 10회씩 10세트<br />또는 25회씩 4세트</p>
-        <Type />
       </div>
+      <Type />
     </div>
   )
 }
