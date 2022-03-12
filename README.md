@@ -10,23 +10,7 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://loc# 학교 급식 알리미
-----------
-## About
-파이썬과 쉘 스크립트를 이용하여 리눅스 유저가 cron을 사용하여 급식 시간이 되면, 그 시간에 따라 아침/점심/저녁 중 하나의 메뉴를 출력한다.
-
-## How to use
-첫째줄에 고등학교 이름의 첫 세글자를 입력받는다. 
-```
-ex) 경북소프트웨어고등학교 -> 경북소
-```
-입력받은 학교명과 현재 시간에 따라 각 학교의 급식 메뉴를 출력한다.
-
-## 리눅스 cron을 사용하여 매 시간마다 코드를 작동 시키는 방법
-```
-  * 12 * * 1-5 {경로}
-  ex) * 12 * * 1-5 /home/script/shell.sh
-```lhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://loclhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
